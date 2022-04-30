@@ -58,8 +58,6 @@ namespace Alura.Estacionamento.Testes
             Assert.Equal(2, faturamento);
         }
 
-
-
         [Theory]
         [InlineData("Jeferson Brandão", "ASD-1498", "Preto", "Gol")]
         public void LocalizaVeiculoNoPatio(string proprietario, string placa, string cor, string modelo)
