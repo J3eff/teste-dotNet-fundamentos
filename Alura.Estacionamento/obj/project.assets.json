@@ -8,19 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
+    "C:\\Users\\jeffe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Documentos\\Projetos\\Aula01\\Alura.Estacionamento\\Alura.Estacionamento\\Alura.Estacionamento.csproj",
+      "projectUniqueName": "S:\\Dev\\Alura\\Teste em dotNet\\alura.estacionamento-aula01\\Alura.Estacionamento\\Alura.Estacionamento.csproj",
       "projectName": "Alura.Estacionamento",
-      "projectPath": "C:\\Users\\andre\\OneDrive\\Documentos\\Projetos\\Aula01\\Alura.Estacionamento\\Alura.Estacionamento\\Alura.Estacionamento.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\OneDrive\\Documentos\\Projetos\\Aula01\\Alura.Estacionamento\\Alura.Estacionamento\\obj\\",
+      "projectPath": "S:\\Dev\\Alura\\Teste em dotNet\\alura.estacionamento-aula01\\Alura.Estacionamento\\Alura.Estacionamento.csproj",
+      "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
+      "outputPath": "S:\\Dev\\Alura\\Teste em dotNet\\alura.estacionamento-aula01\\Alura.Estacionamento\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
