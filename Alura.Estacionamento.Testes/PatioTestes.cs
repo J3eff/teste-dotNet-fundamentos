@@ -12,7 +12,7 @@ namespace Alura.Estacionamento.Testes
     public class PatioTestes
     {
         [Fact]
-        public  void ValidaFaturamento()
+        public void ValidaFaturamento()
         {
             // Arrange
             var estacionamento = new Patio();
@@ -32,6 +32,32 @@ namespace Alura.Estacionamento.Testes
             // Assert
             Assert.Equal(2, faturamento);
         }
+
+        [Theory]
+        [InlineData("Jeferson Brandão", "ASD-1498", "Preto", "Gol")]
+        [InlineData("Jose Silva", "POL-9242", "Cinza", "Fusca")]
+        [InlineData("Maria Silva", "GDR-6524", "Azul", "Opala")]
+        [InlineData("Pedro Silva", "GDR-0101", "Azul", "Corsa")]
+        public void ValidaFaturamentoComVariosVeiculos(string proprietario, string placa, string cor, string modelo)
+        {
+            // Arrange
+            var estacionamento = new Patio();
+            var veiculo = new Veiculo();
+            veiculo.Proprietario = proprietario;
+            veiculo.Cor = cor;
+            veiculo.Modelo = modelo;
+            veiculo.Placa = placa;
+
+            estacionamento.RegistrarEntradaVeiculo(veiculo);
+            estacionamento.RegistrarSaidaVeiculo(veiculo.Placa);
+
+            // Act
+            double faturamento = estacionamento.TotalFaturado();
+
+            //Assert
+            Assert.Equal(2, faturamento);
+        }
+
 
     }
 }
