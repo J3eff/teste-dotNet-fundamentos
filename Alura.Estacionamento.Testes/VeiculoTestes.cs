@@ -45,5 +45,24 @@ namespace Alura.Estacionamento.Testes
         public void ValidarNomeProprietario()
         {
         }
+
+        [Fact]
+        public void DadosVeiculos()
+        {
+            //Arrange
+            var carro = new Veiculo();
+            carro.Proprietario = "Carlos Silva";
+            carro.Placa = "ZAP-7419";
+            carro.Tipo = TipoVeiculo.Automovel;
+            carro.Cor = "Verde";
+            carro.Modelo = "Variante";
+
+            //Act
+            string dados = carro.ToString();
+
+            //Assert
+            Assert.Contains("Tipo do Veiculo:", dados);
+        }
+
     }
 }
