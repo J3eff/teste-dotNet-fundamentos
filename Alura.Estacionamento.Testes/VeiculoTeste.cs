@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Alura.Estacionamento.Testes
 {
-    public class VeiculoTestes
+    public class VeiculoTeste
     {
         [Fact]
         public void TestaVeiculoAcelerar()
