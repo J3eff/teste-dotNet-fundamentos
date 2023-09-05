@@ -22,5 +22,6 @@ namespace Alura.Estacionamento.Testes
 
             Assert.Equal(-150, veiculo.VelocidadeAtual);
         }
+
     }
 }
