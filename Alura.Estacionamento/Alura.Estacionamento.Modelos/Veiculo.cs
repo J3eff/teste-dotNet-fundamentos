@@ -11,6 +11,8 @@ namespace Alura.Estacionamento.Modelos
         private string _placa;
         private string _proprietario;
         private TipoVeiculo _tipo;
+
+
      
         //Propriedades   
 
@@ -70,8 +72,16 @@ namespace Alura.Estacionamento.Modelos
             get; set;
         }
         public DateTime HoraEntrada { get; set; }
-        public DateTime HoraSaida { get; set; }   
-        public TipoVeiculo Tipo { get => _tipo; set => _tipo = value; }
+        public DateTime HoraSaida { get; set; }
+        //public TipoVeiculo Tipo { get => _tipo; set => _tipo = value; }
+        public TipoVeiculo Tipo
+        {
+            get { return _tipo; }
+            set
+            {
+                _tipo = value == null ? TipoVeiculo.Automovel : value;
+            }
+        }
 
         //Métodos
         public void Acelerar(int tempoSeg)
