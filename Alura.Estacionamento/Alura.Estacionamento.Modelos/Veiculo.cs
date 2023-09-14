@@ -73,15 +73,8 @@ namespace Alura.Estacionamento.Modelos
         }
         public DateTime HoraEntrada { get; set; }
         public DateTime HoraSaida { get; set; }
-        //public TipoVeiculo Tipo { get => _tipo; set => _tipo = value; }
-        public TipoVeiculo Tipo
-        {
-            get { return _tipo; }
-            set
-            {
-                _tipo = value == null ? TipoVeiculo.Automovel : value;
-            }
-        }
+        public TipoVeiculo Tipo { get => _tipo; set => _tipo = value; }
+        
 
         //Métodos
         public void Acelerar(int tempoSeg)
@@ -105,6 +98,14 @@ namespace Alura.Estacionamento.Modelos
            Proprietario = proprietario;
         }
 
-       
+        public override string ToString()
+        {
+            return $"Ficha do veículo:\n " +
+                    $"Tipo do Veículo: {this.Tipo}\n " +
+                    $"Proprietário: {this.Proprietario}\n" +
+                    $"Modelo: {this.Modelo}\n" +
+                    $"Cor: {this.Cor}\n" +
+                    $"Placa: {this.Placa}\n";
+        }
     }
 }
