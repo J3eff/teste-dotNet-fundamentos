@@ -68,7 +68,6 @@ C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fu
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\bin\Debug\net5.0\Alura.Estacionamento.runtimeconfig.dev.json
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\bin\Debug\net5.0\Alura.Estacionamento.dll
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\bin\Debug\net5.0\Alura.Estacionamento.pdb
-C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\obj\Debug\net5.0\Alura.Estacionamento.csproj.AssemblyReference.cache
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\obj\Debug\net5.0\Alura.Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\obj\Debug\net5.0\Alura.Estacionamento.AssemblyInfoInputs.cache
 C:\Users\jefferson.junior\development\course\alura\Teste em .NET\teste-dotNet-fundamentos\Alura.Estacionamento\obj\Debug\net5.0\Alura.Estacionamento.AssemblyInfo.cs

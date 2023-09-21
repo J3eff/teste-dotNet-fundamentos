@@ -50,7 +50,7 @@ namespace Alura.Estacionamento.Testes
             Assert.Contains("Ficha do veículo:", dados);
         }
 
-        [Fact]
+        [Fact(Skip = "Teste ainda não implementado")]
         public void ValidaNomeProprietario() { }
     }
 }
