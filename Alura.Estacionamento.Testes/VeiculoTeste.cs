@@ -1,16 +1,28 @@
 using Alura.Estacionamento.Alura.Estacionamento.Modelos;
 using Alura.Estacionamento.Modelos;
+using System;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Alura.Estacionamento.Testes
 {
-    public class VeiculoTeste
+    public class VeiculoTeste : IDisposable
     {
+        private Veiculo veiculo;
+        public ITestOutputHelper saidaConsoleTeste;
+
+        public VeiculoTeste(ITestOutputHelper _saidaConsoleTeste) { 
+            
+            saidaConsoleTeste = _saidaConsoleTeste;
+            saidaConsoleTeste.WriteLine("Construtor invocado.");
+            veiculo = new Veiculo();
+        }
+
         [Fact]
         public void TestaVeiculoAcelerarComParametro10()
         {
             //Arrange
-            var veiculo = new Veiculo();
+            //var veiculo = new Veiculo();
 
             //Act
             veiculo.Acelerar(10);
@@ -23,7 +35,7 @@ namespace Alura.Estacionamento.Testes
         public void TestaVeiculoFrearComParametro10()
         {
             //Arrange
-            var veiculo = new Veiculo();
+            //var veiculo = new Veiculo();
 
             //Act
             veiculo.Frear(10);
@@ -36,15 +48,15 @@ namespace Alura.Estacionamento.Testes
         public void FichaDeInformacaoDoVeiculo()
         {
             //Arrange
-            var carro = new Veiculo();
-            carro.Proprietario = "Carlos Silva";
-            carro.Tipo = TipoVeiculo.Automovel;
-            carro.Placa = "ZAP-7419";
-            carro.Cor = "Verde";
-            carro.Modelo = "Variante";
+            //var veiculo = new Veiculo();
+            veiculo.Proprietario = "Carlos Silva";
+            veiculo.Tipo = TipoVeiculo.Automovel;
+            veiculo.Placa = "ZAP-7419";
+            veiculo.Cor = "Verde";
+            veiculo.Modelo = "Variante";
 
             //Act
-            string dados = carro.ToString();
+            string dados = veiculo.ToString();
 
             //Assert
             Assert.Contains("Ficha do veículo:", dados);
@@ -52,5 +64,10 @@ namespace Alura.Estacionamento.Testes
 
         [Fact(Skip = "Teste ainda não implementado")]
         public void ValidaNomeProprietarioDoVeiculo() { }
+
+        public void Dispose()
+        {
+            saidaConsoleTeste.WriteLine("Dispose invocado.");
+        }
     }
 }
