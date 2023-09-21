@@ -51,6 +51,6 @@ namespace Alura.Estacionamento.Testes
         }
 
         [Fact(Skip = "Teste ainda não implementado")]
-        public void ValidaNomeProprietario() { }
+        public void ValidaNomeProprietarioDoVeiculo() { }
     }
 }
